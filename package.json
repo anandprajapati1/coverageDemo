@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build",
+    "start": "gulp watch",
     "test": "jest"
   },
   "repository": {
