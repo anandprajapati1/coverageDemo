@@ -7,7 +7,8 @@
     "build": "gulp build",
     "start": "gulp watch",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:coveralls": "set NODE_ENV=test&& jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -40,13 +41,8 @@
   "jest": {
     "clearMocks": true,
     "coverageDirectory": "coverage",
-    "collectCoverageFrom": [
-      "*src/**/*.js"
-    ],
-    "coverageReporters": [
-      "lcov",
-      "text"
-    ],
+    "collectCoverageFrom": ["*src/**/*.js"],
+    "coverageReporters": ["lcov","text"],
     "testEnvironment": "node",
     "verbose": true
   }
