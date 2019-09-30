@@ -1,8 +1,10 @@
-import { Person } from "./model/Person";
-
 const app = function () {  
-    let Jane = new Person("Jane", 21);
-    Jane.getName();
+    // let John = new ITGuy("John", 21);
+    // console.log(John.getName());
+    // console.log(John.getAge());
+    // console.log(John.currentState());
+    return true;
 };
 
+// app();
 export {app};
