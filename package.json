@@ -45,6 +45,12 @@
     "collectCoverageFrom": [
       "*src/**/*.js"
     ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "statements": 100
+      }
+    },
     "coverageReporters": [
       "lcov",
       "text"

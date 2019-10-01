@@ -6,11 +6,14 @@ const app = function () {
         },
         cond: function(d){
             if(d>0){
-                return true;
+                this.fun1();
             }
             else{
                 return false;
             }
+        },
+        fun1: function(){
+            console.log('test');
         }
     };
 };
