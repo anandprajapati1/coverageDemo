@@ -6,7 +6,7 @@ const app = function () {
         },
         cond: function(d){
             if(d>0){
-                this.fun1();
+                return this.fun1();
             }
             else{
                 return false;
@@ -14,6 +14,7 @@ const app = function () {
         },
         fun1: function(){
             console.log('test');
+            return true;
         }
     };
 };
