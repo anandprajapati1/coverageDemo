@@ -1,9 +1,18 @@
-const app = function () {  
-    // let John = new ITGuy("John", 21);
-    // console.log(John.getName());
-    // console.log(John.getAge());
-    // console.log(John.currentState());
-    return true;
+const app = function () {
+    return {
+        print: function(){
+            console.log('hi');
+            return 'hi';
+        },
+        cond: function(d){
+            if(d>0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    };
 };
 
 // app();
