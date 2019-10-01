@@ -5,7 +5,7 @@ class Person {
     }
 
     getName(){
-        return `My name is ${this.name}`;
+        return this.name;
     }
 
     getAge(){
